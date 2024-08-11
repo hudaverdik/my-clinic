@@ -1,0 +1,24 @@
+/* homePage.css */
+
+.homepage-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.homepage-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.homepage-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Varsayılan olarak tek sütun */
+  gap: 20px; /* Hücreler arası boşluk */
+  
+  /* Daha geniş ekranlar için */
+  @media (min-width: 768px) { /* md */
+    grid-template-columns: repeat(3, 1fr); /* Üç sütun düzeni */
+  }
+}

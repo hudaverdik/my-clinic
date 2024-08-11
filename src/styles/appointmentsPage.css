@@ -1,0 +1,24 @@
+/* appointmentsPage.css */
+
+.appointments-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.appointments-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.appointments-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Varsayılan tek sütun */
+  gap: 20px;
+  
+  /* Daha geniş ekranlar için */
+  @media (min-width: 768px) { /* md */
+    grid-template-columns: repeat(2, 1fr); /* İki sütun düzeni */
+  }
+}

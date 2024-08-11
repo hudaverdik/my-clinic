@@ -1,0 +1,74 @@
+/* Global Box Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body and Typography */
+  body {
+    font-family: 'Arial', sans-serif; /* Consistent font */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f4f6f9; /* Light background for the entire layout */
+  }
+  
+  /* Links */
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Containers */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Utility Classes */
+  .text-center {
+    text-align: center;
+  }
+  .hidden {
+    display: none;
+  }
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+  
+  /* Form Elements */
+  input, textarea, select {
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive Breakpoints */
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+  }
+  
+  /* Headers and Footers */
+  header, footer {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    text-align: center;
+  }
+  

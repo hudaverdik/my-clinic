@@ -1,0 +1,28 @@
+/* quickLinks.css */
+
+.quick-links-title {
+    font-size: 1.25rem; /* 20px */
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  .quick-links-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .quick-links-item {
+    margin-bottom: 8px;
+  }
+  
+  .quick-links-link {
+    color: #3b82f6; /* Mavi renk */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .quick-links-link:hover {
+    text-decoration: underline;
+  }
+  

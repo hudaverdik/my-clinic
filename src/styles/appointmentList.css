@@ -1,0 +1,25 @@
+/* appointmentList.css */
+
+.appointment-list-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.appointment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.appointment-list-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  color: #555;
+  transition: background-color 0.3s;
+}
+
+.appointment-list-item:hover {
+  background-color: #f9f9f9;
+}
