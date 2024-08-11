@@ -1,0 +1,80 @@
+/* addPatientForm.css */
+
+/* Container Styles */
+.add-patient-form {
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  padding: 20px; /* Internal padding */
+  max-width: 400px; /* Maximum width for the form */
+  margin: 20px auto; /* Center align the form */
+  font-family: 'Arial', sans-serif; /* Font style */
+}
+
+/* Form Field Styles */
+.form-field {
+  margin-bottom: 15px; /* Space between form fields */
+}
+
+.form-field label {
+  display: block; /* Labels appear above inputs */
+  font-weight: bold; /* Bold text for labels */
+  margin-bottom: 5px; /* Space between label and input */
+  font-size: 1rem; /* Consistent font size */
+}
+
+.form-field input,
+.form-field select {
+  width: 100%; /* Full width inputs */
+  padding: 8px; /* Internal padding */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1rem; /* Consistent font size */
+  transition: border-color 0.3s; /* Smooth transition on focus */
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  border-color: #3b82f6; /* Blue border on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Error Message Styles */
+.error {
+  color: red; /* Red text for error messages */
+  font-size: 0.875rem; /* Slightly smaller font size */
+  margin-top: 5px; /* Space above error message */
+}
+/* Container for buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Distributes space between buttons */
+  align-items: center; /* Aligns buttons vertically */
+}
+
+/* Style for each button */
+.button-container button {
+  flex: 1; /* Each button takes equal space */
+  margin: 5px; /* Spacing between buttons */
+  padding: 10px 15px; /* Padding inside buttons */
+  font-size: 1rem; /* Text size */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Cursor indicates clickable */
+  border: none; /* No border */
+}
+
+/* Hover effect for buttons */
+.button-container button:hover {
+  background-color: #2563eb; /* Darker shade on hover */
+}
+
+/* Additional styles for specific buttons if needed */
+.submit-button {
+  background-color: #3b82f6; /* Blue background */
+  color: white; /* White text */
+}
+
+.back-button {
+  background-color: #666; /* Dark grey background */
+  color: white; /* White text */
+}

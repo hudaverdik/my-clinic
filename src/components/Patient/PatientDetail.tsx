@@ -4,6 +4,7 @@
 import React, { useEffect, useState } from 'react';
 import fetchPatientDetail from '../../services/fetchPatientsDetail';
 import '../../styles/patientDetail.css';
+import { useRouter } from 'next/router';
 
 interface Patient {
   id: number;
@@ -22,6 +23,7 @@ interface PatientDetailProps {
 
 const PatientDetail: React.FC<PatientDetailProps> = ({ patientId }) => {
   const [patient, setPatient] = useState<Patient | null>(null);
+  const router = useRouter();
 
   useEffect(() => {
     const loadPatientDetail = async () => {
@@ -39,6 +41,9 @@ const PatientDetail: React.FC<PatientDetailProps> = ({ patientId }) => {
   if (!patient) {
     return <div>Loading...</div>;
   }
+  const handleScheduleAppointment = () => {
+    router.push(`/Patient/${patientId}/newAppointment`);
+  };
 
   return (
     <div className="patient-detail-card">
@@ -48,7 +53,9 @@ const PatientDetail: React.FC<PatientDetailProps> = ({ patientId }) => {
       <p><strong>Last Visit:</strong> {patient.lastVisit}</p>
       <p><strong>Condition:</strong> {patient.condition}</p>
       <p><strong>Procedure:</strong> {patient.procedure}</p>
-      {/* Add more patient details here */}
+      <button className="schedule-appointment-button" onClick={handleScheduleAppointment}>
+        Schedule Appointment
+      </button>
     </div>
   );
 };

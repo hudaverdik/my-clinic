@@ -18,7 +18,7 @@ const PatientItem: React.FC<PatientItemProps> = ({ patient }) => {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push(`/patient/${patient.id}`);
+    router.push(`/Patient/${patient.id}`);
   };
 
   return (
